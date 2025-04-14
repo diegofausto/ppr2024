@@ -52,10 +52,11 @@ function calcularPPR() {
         }
     }
 
-    document.getElementById('resultado').innerText = `Resultado: R$ ${resultado.toFixed(2)}`;
+    document.getElementById('resultado').innerText = `Valor Bruto: R$ ${resultado.toFixed(2)}`;
 
     const relatorio = `
                 <h2>Relatório de Cálculo</h2>
+                <p><strong>Aviso Importante: O valor apresentado é bruto, ou seja, sem desconto de taxa sindical (De acordo com o Acordo Coletivo da Filial) e Imposto de Renda (Para valores acima de R$ 6.677,55).</p>
                 <p><strong>Grupo de Cargo:</strong> ${grupoCargo}</p>
                 <p><strong>Categoria:</strong> ${categoria}</p>
                 <p><strong>Salário Base Mensal:</strong> R$ ${salario.toFixed(2)}</p>
