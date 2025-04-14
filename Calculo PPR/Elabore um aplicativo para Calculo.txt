@@ -1,0 +1,56 @@
+Elabore um aplicativo para Calculo do PPR contendo os seguintes campos:
+
+Filial: Droplist (01 - Matriz, 02 - Itumbiara, 03 - Maracanaú)
+Categoria: Droplist (01 - Latas, 02 - Tampas, 03 - Latas/Tampas, 04 - White Collar)
+Grupo de Cargo: Droplist 
+(01 - Operador, Técnico, Assistente, Analista, Especialista
+02 - Supervisor, Coordenador, Controller
+03 - Gerente)
+
+Salário Base Mensal (Dezembro/2024): Usuário deve informar o valor
+Nro. Meses Trabalhados em 2024: Usuário deve informar a quantidade
+Botão Calcular
+Botão Limpar (quando usuário clicar o aplicativo deve limpar dos dados)
+
+Quando o usuário clicar calcular deve retornar o relatório Extrato de Calculo PPR 2024,
+
+então Calcule (
+se Categoria  04 - White Collar e Grupo de cargo 01 
+então (salário * nro meses * 10% * nro. meses * 120% * 13,33)/12
+se Categoria  04 - White Collar e Grupo de cargo 02 
+então (salário * nro meses * 20% * nro. meses * 120% * 13,33)/12
+se Categoria  04 - White Collar e Grupo de cargo 03 
+então (salário * nro meses * 20% * nro. meses * 120%* 13,33)/12
+
+
+se Categoria  01 - Latas e Grupo de cargo 01 e filial 02
+então (salário * nro meses * 10% * nro. meses * 78,43% * 13,33)/12
+se Categoria  01 - Latas e Grupo de cargo 02 e filial 02
+então (salário * nro meses * 20% * nro. meses * 78,43% * 13,33)/12
+se Categoria  01 - Latas e Grupo de cargo 03 e filial 02
+então (salário * nro meses * 30% * nro. meses * 78,43% * 13,33)/12
+
+
+se Categoria  01 - Latas e Grupo de cargo 01 e filial 03
+então (salário * nro meses * 10% * nro. meses * 106,19% * 13,33)/12
+se Categoria  01 - Latas e Grupo de cargo 02 e filial 03
+então (salário * nro meses * 20% * nro. meses * 106,19% * 13,33)/12
+se Categoria  01 - Latas e Grupo de cargo 03 e filial 03
+então (salário * nro meses * 30% * nro. meses * 106,19% * 13,33)/12
+
+
+se Categoria  02 - Tampas e Grupo de cargo 01 e filial 03
+então (salário * nro meses * 10% * nro. meses * 117,46% * 13,33)/12
+se Categoria  02 - Tampas e Grupo de cargo 02 e filial 03
+então (salário * nro meses * 20% * nro. meses * 117,46% * 13,33)/12
+se Categoria  02 - Tampas e Grupo de cargo 03 e filial 03
+então (salário * nro meses * 30% * nro. meses * 117,46% * 13,33)/12
+
+se Categoria  03 - Latas/Tampas e Grupo de cargo 01 e filial 03
+então (salário * nro meses * 10% * nro. meses * 111,82% * 13,33)/12
+se Categoria  03 - Latas/Tampas e Grupo de cargo 02 e filial 03
+então (salário * nro meses * 20% * nro. meses * 111,82% * 13,33)/12
+se Categoria  03 - Latas/Tampas e Grupo de cargo 03 e filial 03
+então (salário * nro meses * 30% * nro. meses * 111,82% * 13,33)/12
+
+E detalhe a memoria do calculo e o resultado.
