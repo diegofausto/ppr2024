@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de PPR 2024</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        
+    <h1>Calculadora de PPR 2024</h1>
+    <label for="filial">Filial:</label>
+    <select id="filial">
+        <option value="01">01 - Matriz</option>
+        <option value="02">02 - Itumbiara</option>
+        <option value="03">03 - Maracanaú</option>
+    </select>
+
+    <label for="categoria">Categoria:</label>
+    <select id="categoria">
+        <option value="01">01 - Latas</option>
+        <option value="02">02 - Tampas</option>
+        <option value="03">03 - Latas/Tampas</option>
+        <option value="04">04 - White Collar</option>
+    </select>
+
+    <label for="grupoCargo">Grupo de Cargo:</label>
+    <select id="grupoCargo">
+        <option value="01">01 - Operador, Técnico, Assistente, Analista, Especialista</option>
+        <option value="02">02 - Supervisor, Coordenador, Controller</option>
+        <option value="03">03 - Gerente</option>
+    </select>
+
+    <label for="salario">Salário Base Mensal (Dezembro/2024):</label>
+    <input type="number" id="salario" step="0.01">
+    
+    <label for="meses">Nro. Meses Trabalhados em 2024:</label>
+    <input type="number" id="meses">
+
+    <button onclick="calcularPPR()">Calcular</button>
+    <button onclick="limparCampos()">Limpar</button>
+
+    <div id="resultado">Resultado: </div>
+
+    <div id="relatorio"></div>
+
+    <script src="/app.js">  </script>
+
+    </section>
+    <footer id="logo-container" style="display: none;">
+        <img src="https://www.canpack.com/wp-content/themes/canpack-theme/dist/img/logo.svg" alt="Logo" class="logo-img">
+    </footer>
+
+
+</body>
+</html>
