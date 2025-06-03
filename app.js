@@ -77,3 +77,5 @@ function limparCampos() {
     document.getElementById('logo-container').style.display = 'none';
 }
 
+function Voltar() { window.location.href = "https://diegofausto.github.io/calculadorascanpackers";
+}
